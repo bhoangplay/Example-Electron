@@ -1,0 +1,22 @@
+{
+  "name": "l01",
+  "version": "1.0.0",
+  "description": "hello world",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhoangplay/Example-Electron.git"
+  },
+  "keywords": [
+    "l01"
+  ],
+  "author": "mhoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhoangplay/Example-Electron/issues"
+  },
+  "homepage": "https://github.com/bhoangplay/Example-Electron#readme"
+}
