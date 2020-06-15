@@ -5,16 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron .",
-    "release:win": "npm-run-all -s release:build release:pack-win",
-    "release:build": "npm-run-all -s release:clean release:copy -p release:js-main release:js-renderer",
-    "release:pack-win": "cross-conf-env electron-packager ./dist/src npm_package_config_app --out=dist/bin --download.cache=dist/cache --platform=win32 --arch=x64 --overwrite --asar --icon=src/app.ico --version-string.CompanyName=\"npm_package_config_appCompanyName\" --version-string.LegalCopyright=\"npm_package_config_appLegalCopyright\" --version-string.FileDescription=\"npm_package_config_appFileDescription\" --version-string.OriginalFilename=\"npm_package_config_app.exe\" --version-string.FileVersion=\"npm_package_version\" --version-string.ProductVersion=\"npm_package_version\" --version-string.ProductName=\"npm_package_config_app\" --version-string.InternalName=\"npm_package_config_app\"",
-    "release:clean": "rimraf ./dist/src",
-    "release:copy": "npm-run-all release:copy-*",
-    "release:copy-assets": "cpx \"./src/assets/**/!(*.js|*.css|*.scss|*.styl|*.map)\" ./dist/src/assets/",
-    "release:copy-json": "cpx \"./src/package.json\" ./dist/src/",
-    "release:js-main": "webpack --env.main --mode production",
-    "release:js-renderer": "webpack --mode production"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -30,10 +21,6 @@
   },
   "homepage": "https://github.com/bhoangplay/Example-Electron#readme",
   "devDependencies": {
-    "cpx": "^1.5.0",
-    "electron": "^9.0.3",
-    "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.2",
-    "webpack": "^4.43.0"
+    "electron": "^9.0.3"
   }
 }
