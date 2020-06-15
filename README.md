@@ -15,5 +15,6 @@ $ npm install --save-dev webpack
 $ npm install --save-dev webpack-cli
 $ npm start
 ```
+note: app.on('ready', () =>{})
 refer: https://www.electronjs.org/docs/tutorial/first-app
 # Lesson 02
